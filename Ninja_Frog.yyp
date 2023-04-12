@@ -11,6 +11,7 @@
     {"id":{"name":"Obj_BGM","path":"objects/Obj_BGM/Obj_BGM.yy",},"order":19,},
     {"id":{"name":"level4","path":"rooms/level4/level4.yy",},"order":6,},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},"order":0,},
+    {"id":{"name":"Script2","path":"scripts/Script2/Script2.yy",},"order":21,},
     {"id":{"name":"spr_eneime_hit","path":"sprites/spr_eneime_hit/spr_eneime_hit.yy",},"order":15,},
     {"id":{"name":"Spr_fade","path":"sprites/Spr_fade/Spr_fade.yy",},"order":13,},
     {"id":{"name":"Purple","path":"sprites/Purple/Purple.yy",},"order":4,},
