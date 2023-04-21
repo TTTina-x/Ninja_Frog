@@ -7,3 +7,4 @@ shot = true;
 invincible = false;
 timer = 0;
 duration = 60;
+spriteState = 0;
