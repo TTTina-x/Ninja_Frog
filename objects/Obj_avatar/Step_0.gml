@@ -59,16 +59,6 @@ else{
 if (hsp != 0) image_xscale = sign(hsp);
 
 
-//shooting bullets
-if(fire && shot = true)
-{
-	instance_create_layer(x,y,"Bullet",Obj_bullet);
-	audio_play_sound(Gun,10,false);//sound effect when shoots bullets
-	shot = false;
-	alarm[0] = 20;
-
-}
-
 //collison with blue bird
 if(place_meeting(x,y,Obj_enemy) && !invincible){
 	global.avatar_hp -=1;
@@ -86,7 +76,7 @@ if(invincible){
 		
 	}
 }
-show_debug_message(global.avatar_hp);
+//show_debug_message(global.avatar_hp);
 //death
 if(global.avatar_hp == 0){
 	global.avatar_death = true;

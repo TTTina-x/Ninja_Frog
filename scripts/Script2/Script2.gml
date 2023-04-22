@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function Script2(){
-
-}
+global.avatar2_vsp = 0;
+global.avatar2_hp = 3;
+global.avatar2_death = false;
