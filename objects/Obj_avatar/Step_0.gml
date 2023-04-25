@@ -58,6 +58,18 @@ else{
 }
 if (hsp != 0) image_xscale = sign(hsp);
 
+<<<<<<< Updated upstream
+=======
+//shooting bullets
+if(fire && shot = true)
+{
+	//instance_create_layer(x,y,"Bullet",Obj_bullet);
+	audio_play_sound(Gun,10,false);//sound effect when shoots bullets
+	shot = false;
+	alarm[0] = 20;
+
+}
+>>>>>>> Stashed changes
 
 //collison with blue bird
 if(place_meeting(x,y,Obj_enemy) && !invincible){
