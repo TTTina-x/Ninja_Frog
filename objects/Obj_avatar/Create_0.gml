@@ -5,3 +5,4 @@ grv = 0.4;
 invincible = false;
 timer = 0;
 duration = 60;
+spriteState = 0;

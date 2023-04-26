@@ -4,8 +4,6 @@ if(place_meeting(x,y,Obj_avatar) && !invincible){
 	invincible = true;
 	audio_play_sound(Low_Health,10,false)
 	Obj_avatar.sprite_index = spr_hit;
-
-	
 }
 //invincible for a short time.
 if(invincible){
