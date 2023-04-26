@@ -32,7 +32,7 @@ if(place_meeting(x+hsp,y,Obj_wall)){
 	{ 
 		x = x+sign(hsp);
 	}
-	
+		
 	hsp = 0;
 }
 x = x+ hsp;
