@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "Obj_strawberry",
-  "spriteId": null,
+  "spriteId": {
+    "name": "Strawberry",
+    "path": "sprites/Strawberry/Strawberry.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
