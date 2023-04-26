@@ -58,8 +58,7 @@ else{
 }
 if (hsp != 0) image_xscale = sign(hsp);
 
-<<<<<<< Updated upstream
-=======
+
 //shooting bullets
 if(fire && shot = true)
 {
@@ -69,7 +68,7 @@ if(fire && shot = true)
 	alarm[0] = 20;
 
 }
->>>>>>> Stashed changes
+
 
 //collison with blue bird
 if(place_meeting(x,y,Obj_enemy) && !invincible){

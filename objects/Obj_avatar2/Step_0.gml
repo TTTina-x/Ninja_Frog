@@ -50,10 +50,10 @@ else
 { image_speed = 1;
 	if(hsp==0)
 	{
-		sprite_index = Spr_avatar2;
+		sprite_index = spr_avatar2;
 	}
 else{
-	sprite_index = spr_avater2_run;
+	sprite_index = spr_avatar2_run;
 }
 }
 if (hsp != 0) image_xscale = sign(hsp);

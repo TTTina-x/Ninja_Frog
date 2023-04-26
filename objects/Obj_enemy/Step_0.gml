@@ -2,11 +2,11 @@ x -= spd;
 //ideal sprite
 sprite_index = spr_eneime;
 
-<<<<<<< Updated upstream
+
 //// bullets hits enemy it lose hp
-=======
+
 // bullets hits enemy it lose hp
->>>>>>> Stashed changes
+
 //if(place_meeting(x,y,Obj_bullet) && !invincible){
 //	HP -=1;
 //	invincible = true;//invincible for a short time
