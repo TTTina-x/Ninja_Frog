@@ -98,11 +98,10 @@ if(collision_rectangle(x-16, y+16, x+16, y+20, Obj_avatar, false, true) && globa
 	
 }
 
-if(global.avatar2_death && room = Level_1)
+if(global.avatar_death && room = Level_1)
 {
-	x = 755;
-	y = 355;
-	global.avatar2_death = false;
+	
 }
+
 
 
