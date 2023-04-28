@@ -1,5 +1,5 @@
 //if touch dies
-global.avatar_death = true;
+global.avatar2_death = true;
 
 
 

@@ -85,6 +85,7 @@ if(collision_rectangle(x-16, y+16, x+16, y+20, Obj_enemy, false, true) && global
     temp.sprite_index = spr_eneime_hit;
     temp.vspeed = 10;
 }show_debug_message(Obj_enemy.y)
+
 //stepping on player1
 if(collision_rectangle(x-16, y+16, x+16, y+20, Obj_avatar, false, true) && global.avatar2_vsp >0){
     show_debug_message("Enemy Hit");

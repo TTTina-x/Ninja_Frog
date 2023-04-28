@@ -8,9 +8,14 @@ if (room = Level_1 && global.avatar_death = true)
 	global.avatar_hp = 3;
 	audio_play_sound(Again,10,false);
 }
-show_debug_message(Obj_avatar.x)
-show_debug_message(Obj_avatar.y)
-
+if (room = Level_1 && global.avatar2_death = true)
+{
+	Obj_avatar2.x = 750;
+	Obj_avatar2.y = 350;
+	global.avatar2_death = false;
+	global.avatar_hp = 3;
+	audio_play_sound(Again,10,false);
+}
 if (room = level_2 && global.avatar_death = true)
 {
 	room_goto(level_2);
