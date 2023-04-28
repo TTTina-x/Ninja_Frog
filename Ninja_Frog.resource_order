@@ -26,6 +26,7 @@
     {"name":"level_3","order":5,"path":"rooms/level_3/level_3.yy",},
     {"name":"BGM","order":7,"path":"sounds/BGM/BGM.yy",},
     {"name":"Obje_end","order":11,"path":"objects/Obje_end/Obje_end.yy",},
+    {"name":"spr_avatar2_hit","order":31,"path":"sprites/spr_avatar2_hit/spr_avatar2_hit.yy",},
     {"name":"spr_end_cp","order":12,"path":"sprites/spr_end_cp/spr_end_cp.yy",},
     {"name":"Click","order":11,"path":"sounds/Click/Click.yy",},
     {"name":"Next_level","order":13,"path":"sounds/Next_level/Next_level.yy",},

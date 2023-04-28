@@ -92,6 +92,12 @@ if(invincible){
 if(global.avatar_hp == 0){
 	global.avatar_death = true;
 }
+if(global.avatar_death && room = Level_1)
+{
+	x = 755;
+	y = 350;
+	global.avatar2_death = false;
+}
 
 //killing enemies by step on it
 if(place_meeting(x,y + 16, Obj_enemy)){
@@ -103,8 +109,9 @@ if(place_meeting(x,y + 16, Obj_enemy)){
 		self.vspeed = 10;//fall down
 	}
 	
+
 }
-	
+
 
 
 

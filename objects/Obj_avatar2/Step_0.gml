@@ -58,11 +58,6 @@ else{
 }
 if (hsp != 0) image_xscale = sign(hsp);
 
-//death
-//death
-if(global.avatar2_hp == 0){
-	global.avatar2_death = true;
-}
 
 //collison with blue bird
 if(place_meeting(x,y,Obj_enemy) && !invincible){
@@ -81,6 +76,33 @@ if(invincible){
 		
 	}
 }
+//stepping on enemy
+if(collision_rectangle(x-16, y+16, x+16, y+20, Obj_enemy, false, true) && global.avatar2_vsp >0){
+    show_debug_message("Enemy Hit");
+    audio_play_sound(Hurt,10,false);
+    global.avatar2_vsp -= 12;//boost player up
+    var temp = instance_nearest(x, y, Obj_enemy);
+    temp.sprite_index = spr_eneime_hit;
+    temp.vspeed = 10;
+}
 
+//stepping on player1
+if(collision_rectangle(x-16, y+16, x+16, y+20, Obj_avatar, false, true) && global.avatar2_vsp >0){
+    show_debug_message("Enemy Hit");
+    audio_play_sound(Hurt,10,false);
+    global.avatar2_vsp -= 12;//boost player up
+    var temp = instance_nearest(x, y, Obj_avatar);
+    temp.sprite_index = spr_hit;
+    temp.vspeed = 10;
+	global.avatar_death = true;
+	
+}
+
+if(global.avatar2_death && room = Level_1)
+{
+	x = 755;
+	y = 355;
+	global.avatar2_death = false;
+}
 
 

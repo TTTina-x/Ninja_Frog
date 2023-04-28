@@ -61,6 +61,7 @@
     {"id":{"name":"level_3","path":"rooms/level_3/level_3.yy",},},
     {"id":{"name":"BGM","path":"sounds/BGM/BGM.yy",},},
     {"id":{"name":"Obje_end","path":"objects/Obje_end/Obje_end.yy",},},
+    {"id":{"name":"spr_avatar2_hit","path":"sprites/spr_avatar2_hit/spr_avatar2_hit.yy",},},
     {"id":{"name":"spr_end_cp","path":"sprites/spr_end_cp/spr_end_cp.yy",},},
     {"id":{"name":"Click","path":"sounds/Click/Click.yy",},},
     {"id":{"name":"Next_level","path":"sounds/Next_level/Next_level.yy",},},
