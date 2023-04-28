@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_avatar",
-  "bbox_bottom": 30,
+  "bbox_bottom": 31,
   "bbox_left": 5,
   "bbox_right": 26,
   "bbox_top": 8,
