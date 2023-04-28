@@ -6,7 +6,7 @@ grv = 0.4;
 invincible = false;
 timer = 0;
 duration = 60;
-respawn_pos = 0;
+respawn = false;
 
 
 
