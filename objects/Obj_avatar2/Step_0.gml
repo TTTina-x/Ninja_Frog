@@ -84,8 +84,7 @@ if(collision_rectangle(x-16, y+16, x+16, y+20, Obj_enemy, false, true) && global
     var temp = instance_nearest(x, y, Obj_enemy);
     temp.sprite_index = spr_eneime_hit;
     temp.vspeed = 10;
-}
-
+}show_debug_message(Obj_enemy.y)
 //stepping on player1
 if(collision_rectangle(x-16, y+16, x+16, y+20, Obj_avatar, false, true) && global.avatar2_vsp >0){
     show_debug_message("Enemy Hit");
@@ -93,15 +92,13 @@ if(collision_rectangle(x-16, y+16, x+16, y+20, Obj_avatar, false, true) && globa
     global.avatar2_vsp -= 12;//boost player up
     var temp = instance_nearest(x, y, Obj_avatar);
     temp.sprite_index = spr_hit;
-    temp.vspeed = 10;
+    global.avatar_vsp = 10;
 	global.avatar_death = true;
+	
 	
 }
 
-if(global.avatar_death && room = Level_1)
-{
-	
-}
+
 
 
 

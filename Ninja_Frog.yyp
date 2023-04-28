@@ -113,7 +113,6 @@
     {"id":{"name":"Blue","path":"sprites/Blue/Blue.yy",},},
     {"id":{"name":"Obj_scores","path":"objects/Obj_scores/Obj_scores.yy",},},
     {"id":{"name":"Boost","path":"sounds/Boost/Boost.yy",},},
-    {"id":{"name":"Obj_player","path":"objects/Obj_player/Obj_player.yy",},},
     {"id":{"name":"Green","path":"sprites/Green/Green.yy",},},
     {"id":{"name":"start_menu","path":"rooms/start_menu/start_menu.yy",},},
   ],

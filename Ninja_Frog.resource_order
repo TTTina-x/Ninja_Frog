@@ -74,7 +74,6 @@
     {"name":"Blue","order":5,"path":"sprites/Blue/Blue.yy",},
     {"name":"Obj_scores","order":7,"path":"objects/Obj_scores/Obj_scores.yy",},
     {"name":"Boost","order":15,"path":"sounds/Boost/Boost.yy",},
-    {"name":"Obj_player","order":24,"path":"objects/Obj_player/Obj_player.yy",},
     {"name":"Green","order":7,"path":"sprites/Green/Green.yy",},
   ],
 }
