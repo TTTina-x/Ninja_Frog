@@ -76,7 +76,7 @@ else{
 //}
 //}
 if (hsp != 0) image_xscale = sign(hsp);
-show_debug_message(spriteState);
+//show_debug_message(spriteState);
 
 
 //collison with blue bird
@@ -122,8 +122,17 @@ if(collision_rectangle(x-16, y+16, x+16, y+20, Obj_avatar2, false, true) && glob
     global.avatar_vsp -= 12;//boost player up
     var temp = instance_nearest(x, y, Obj_avatar2);
     temp.sprite_index = spr_avatar2_hit;
-    global.avata2r_vsp = 10;
+    global.avatar2_vsp = 10;
 	global.avatar2_death = true;
 	
 	
+}
+
+if(collision_rectangle(x-16, y+16, x+16, y+20, obj_tree, false, true) && global.avatar_vsp >0){
+    show_debug_message("Enemy Hit");
+    audio_play_sound(Hurt,10,false);
+    global.avatar_vsp -= 12;//boost player up
+    var temp = instance_nearest(x, y, obj_tree);
+    temp.sprite_index = spr_tree_hit;
+    temp.vspeed = 10;
 }

@@ -18,11 +18,21 @@ if (room = Level_1 && global.avatar2_death = true)
 }
 if (room = level_2 && global.avatar_death = true)
 {
-	room_goto(level_2);
+	Obj_avatar.x = 32;
+	Obj_avatar.y = 450;
 	global.avatar_death = false;
 	global.avatar_hp = 3;
 	audio_play_sound(Again,10,false);
 }
+if (room = level_2 && global.avatar2_death = true)
+{
+	Obj_avatar2.x = 62;
+	Obj_avatar2.y = 450;
+	global.avatar2_death = false;
+	global.avatar2_hp = 3;
+	audio_play_sound(Again,10,false);
+}
+
 
 if (room = level_3 && global.avatar_death = true)
 {

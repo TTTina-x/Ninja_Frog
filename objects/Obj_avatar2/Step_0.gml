@@ -84,13 +84,23 @@ if(collision_rectangle(x-16, y+16, x+16, y+20, Obj_enemy, false, true) && global
     var temp = instance_nearest(x, y, Obj_enemy);
     temp.sprite_index = spr_eneime_hit;
     temp.vspeed = 10;
-}show_debug_message(Obj_enemy.y)
+}
+
+if(collision_rectangle(x-16, y+16, x+16, y+20, obj_tree, false, true) && global.avatar2_vsp >0){
+    show_debug_message("Enemy Hit");
+    audio_play_sound(Hurt,10,false);
+    global.avatar2_vsp -= 12;//boost player up
+    var temp = instance_nearest(x, y, obj_tree);
+    temp.sprite_index = spr_tree_hit;
+    temp.vspeed = 10;
+}
+//show_debug_message(Obj_enemy.y)
 
 //stepping on player1
 if(collision_rectangle(x-16, y+16, x+16, y+20, Obj_avatar, false, true) && global.avatar2_vsp >0){
     show_debug_message("Enemy Hit");
     audio_play_sound(Hurt,10,false);
-    global.avatar2_vsp -= 12;//boost player up
+    global.avatar2_vsp -= 16;//boost player up
     var temp = instance_nearest(x, y, Obj_avatar);
     temp.sprite_index = spr_hit;
     global.avatar_vsp = 10;
