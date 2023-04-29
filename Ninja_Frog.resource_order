@@ -70,7 +70,7 @@
     {"name":"Obj_wall","order":4,"path":"objects/Obj_wall/Obj_wall.yy",},
     {"name":"Low_Health","order":9,"path":"sounds/Low_Health/Low_Health.yy",},
     {"name":"spr_avatar2_jump","order":23,"path":"sprites/spr_avatar2_jump/spr_avatar2_jump.yy",},
-    {"name":"Obj_shaw","order":1,"path":"objects/Obj_shaw/Obj_shaw.yy",},
+    {"name":"Obj_saw","order":1,"path":"objects/Obj_saw/Obj_saw.yy",},
     {"name":"spr_font","order":8,"path":"sprites/spr_font/spr_font.yy",},
     {"name":"spr_eneime","order":9,"path":"sprites/spr_eneime/spr_eneime.yy",},
     {"name":"Blue","order":5,"path":"sprites/Blue/Blue.yy",},
