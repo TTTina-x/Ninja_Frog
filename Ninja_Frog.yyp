@@ -125,10 +125,10 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"start_menu","path":"rooms/start_menu/start_menu.yy",},},
+    {"roomId":{"name":"level4","path":"rooms/level4/level4.yy",},},
     {"roomId":{"name":"level_3","path":"rooms/level_3/level_3.yy",},},
     {"roomId":{"name":"Level_1","path":"rooms/Level_1/Level_1.yy",},},
     {"roomId":{"name":"level_2","path":"rooms/level_2/level_2.yy",},},
-    {"roomId":{"name":"level4","path":"rooms/level4/level4.yy",},},
     {"roomId":{"name":"room_end","path":"rooms/room_end/room_end.yy",},},
   ],
   "TextureGroups": [

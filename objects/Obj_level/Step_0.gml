@@ -57,9 +57,19 @@ if (room = level_3 && global.avatar2_death = true)
 
 if (room = level4 && global.avatar_death = true)
 {
-	room_goto(level4);
+	Obj_avatar.x = 73;
+	Obj_avatar.y = 455;
 	global.avatar_death = false;
 	global.avatar_hp = 3;
+	audio_play_sound(Again,10,false);
+}
+
+if (room = level4 && global.avatar2_death = true)
+{
+	Obj_avatar2.x = 755;
+	Obj_avatar2.y = 455;
+	global.avatar2_death = false;
+	global.avatar2_hp = 3;
 	audio_play_sound(Again,10,false);
 }
 
