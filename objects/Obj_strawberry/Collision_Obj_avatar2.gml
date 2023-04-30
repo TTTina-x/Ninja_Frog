@@ -2,7 +2,7 @@
 if(collect)
 {
 	audio_play_sound(Click,10,false);
-	score++;
+	global.avatar2_score += 1;
 	collect = false;
 }
 

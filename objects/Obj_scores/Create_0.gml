@@ -6,8 +6,7 @@ font = font_add_sprite_ext(spr_font, map_string,false,0);
 draw_set_font(font);
 
 
-score = 0;
-
+;
 
 
 
