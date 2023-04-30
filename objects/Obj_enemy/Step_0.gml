@@ -21,9 +21,7 @@ sprite_index = spr_eneime;
 //	}
 //}
 //dissapear when it has no hp
-if(HP == 0){
-	instance_destroy(self);
-}
+
 
 	
 
