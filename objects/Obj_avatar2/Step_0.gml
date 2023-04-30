@@ -103,13 +103,13 @@ if(collision_rectangle(x-16, y+16, x+16, y+20, Obj_avatar, false, true) && globa
     global.avatar2_vsp -= 16;//boost player up
     var temp = instance_nearest(x, y, Obj_avatar);
     temp.sprite_index = spr_hit;
-    global.avatar_vsp = 10;
-	global.avatar_death = true;
+    temp.vspeed = 10;
+
 	
 	
 }
 
-
+show_debug_message(Obj_avatar.vspeed)
 
 
 

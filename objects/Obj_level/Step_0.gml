@@ -2,11 +2,12 @@
 //check player's current level and when they died and sent back to the current level if they died
 if (room = Level_1 && global.avatar_death = true)
 {
-	Obj_avatar.x = 750;
+	Obj_avatar.x = 30;
 	Obj_avatar.y = 350
 	global.avatar_death = false;
 	global.avatar_hp = 3;
 	audio_play_sound(Again,10,false);
+	
 	
 	
 }
@@ -74,13 +75,66 @@ if (room = level4 && global.avatar2_death = true)
 }
 
 	
-	//if(timer != 60){
-////increment timer by 1
-//	timer++
-//}
-//else if(timer == 60 ){
-////shoot
-//instance_create_layer(x,y,"Bullet",Obj_bullet);
-////reset timer to 0
-//timer =0;
-//}
+if(Obj_avatar.y > room_height && room = Level_1)
+{
+	Obj_avatar.vspeed = 0;
+	Obj_avatar.player_respawn_timer++;
+	show_debug_message("timer on")
+	if(Obj_avatar.player_respawn_timer > Obj_avatar.player_respawn_interval)
+	{
+		
+		Obj_avatar.x = 30;
+		Obj_avatar.y = 350
+		audio_play_sound(Next_level,10,false)
+		Obj_avatar.player_respawn_timer = 0;
+	//	Obj_avatar.respawn = false;
+	}
+}
+
+if(Obj_avatar2.y > room_height && room = Level_1)
+{
+	Obj_avatar2.vspeed = 0;
+	Obj_avatar2.player_respawn_timer++;
+	show_debug_message("timer on")
+	if(Obj_avatar2.player_respawn_timer > Obj_avatar2.player_respawn_interval)
+	{
+		
+		Obj_avatar2.x = 750;
+		Obj_avatar2.y = 350
+		audio_play_sound(Next_level,10,false)
+		Obj_avatar2.player_respawn_timer = 0;
+	//	Obj_avatar.respawn = false;
+	}
+}
+
+if(Obj_avatar.y > room_height && room = level_2)
+{
+	Obj_avatar.vspeed = 0;
+	Obj_avatar.player_respawn_timer++;
+	show_debug_message("timer on")
+	if(Obj_avatar.player_respawn_timer > Obj_avatar.player_respawn_interval)
+	{
+		
+		Obj_avatar.x = 32;
+		Obj_avatar.y = 450
+		audio_play_sound(Next_level,10,false)
+		Obj_avatar.player_respawn_timer = 0;
+	//	Obj_avatar.respawn = false;
+	}
+}
+
+if(Obj_avatar2.y > room_height && room = level_2)
+{
+	Obj_avatar2.vspeed = 0;
+	Obj_avatar2.player_respawn_timer++;
+	show_debug_message("timer on")
+	if(Obj_avatar2.player_respawn_timer > Obj_avatar2.player_respawn_interval)
+	{
+		
+		Obj_avatar2.x = 62;
+		Obj_avatar2.y = 450
+		audio_play_sound(Next_level,10,false)
+		Obj_avatar2.player_respawn_timer = 0;
+	//	Obj_avatar.respawn = false;
+	}
+}

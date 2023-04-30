@@ -7,7 +7,8 @@ invincible = false;
 timer = 0;
 duration = 60;
 respawn = false;
-
+player_respawn_timer = 0;
+player_respawn_interval = 120;
 
 
 
