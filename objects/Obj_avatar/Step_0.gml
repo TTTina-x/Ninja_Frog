@@ -76,17 +76,8 @@ else{
 //}
 //}
 if (hsp != 0) image_xscale = sign(hsp);
-show_debug_message(spriteState);
+//show_debug_message(spriteState);
 
-//shooting bullets
-if(fire && shot = true)
-{
-	instance_create_layer(x,y,"Bullet",Obj_bullet);
-	audio_play_sound(Gun,10,false);//sound effect when shoots bullets
-	shot = false;
-	alarm[0] = 20;
-
-}
 
 //collison with blue bird
 if(place_meeting(x,y,Obj_enemy) && !invincible){
@@ -110,24 +101,6 @@ if(invincible){
 if(global.avatar_hp == 0){
 	global.avatar_death = true;
 }
-//if(global.avatar_death && room = Level_1)
-//{
-//	x = 30;
-//	y = 350;
-//	global.avatar_death = false;
-//}
-
-//killing enemies by step on it
-//if(place_meeting(x,y + 16, Obj_enemy)){
-//	audio_play_sound(Hurt,10,false);
-//	global.avatar_vsp -= 6;//boost player up
-//	with(instance_nearest(x,y,Obj_enemy))
-//	{
-//		self.sprite_index = spr_eneime_hit;
-//		self.vspeed = 10;//fall down
-//	}
-	
-//}
 if(collision_rectangle(x-16, y+16, x+16, y+18, Obj_enemy, false, true) && global.avatar_vsp >0){
 	show_debug_message("Enemy Hit");
 	audio_play_sound(Hurt,10,false);
@@ -140,4 +113,24 @@ if(collision_rectangle(x-16, y+16, x+16, y+18, Obj_enemy, false, true) && global
 	//	self.sprite_index = spr_eneime_hit;
 	//	self.vspeed = 10;//fall down
 	//}
+}
+//steps on other player
+if(collision_rectangle(x-16, y+16, x+16, y+20, Obj_avatar2, false, true) && global.avatar_vsp >0){
+    show_debug_message("avatar1 Hit");
+    audio_play_sound(Hurt,10,false);
+    global.avatar_vsp -= 12;//boost player up
+    var temp = instance_nearest(x, y, Obj_avatar2);
+    temp.sprite_index = spr_avatar2_hit;
+    temp.vspeed = 10;
+	
+	
+}
+
+if(collision_rectangle(x-16, y+16, x+16, y+20, obj_tree, false, true) && global.avatar_vsp >0){
+    show_debug_message("Enemy Hit");
+    audio_play_sound(Hurt,10,false);
+    global.avatar_vsp -= 12;//boost player up
+    var temp = instance_nearest(x, y, obj_tree);
+    temp.sprite_index = spr_tree_hit;
+    temp.vspeed = 10;
 }

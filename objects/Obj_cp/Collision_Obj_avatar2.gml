@@ -3,6 +3,7 @@ if (next_level){
 	instance_create_depth(0,0,-9999, Obj_fade);
 	room_goto(destenation_room);
 
+
 }
 
 

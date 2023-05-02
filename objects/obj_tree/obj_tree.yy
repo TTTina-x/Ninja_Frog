@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Attack__64x32_",
-    "path": "sprites/Attack__64x32_/Attack__64x32_.yy",
+    "name": "spr_tree",
+    "path": "sprites/spr_tree/spr_tree.yy",
   },
   "spriteMaskId": null,
   "visible": true,
