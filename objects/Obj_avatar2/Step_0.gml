@@ -109,7 +109,6 @@ if(collision_rectangle(x-16, y+16, x+16, y+20, Obj_avatar, false, true) && globa
 	
 }
 
-show_debug_message(Obj_avatar.vspeed)
 
 
 
