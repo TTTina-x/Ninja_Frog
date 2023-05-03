@@ -1,0 +1,1 @@
+bullType = 1;

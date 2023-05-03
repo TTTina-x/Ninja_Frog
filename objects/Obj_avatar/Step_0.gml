@@ -84,8 +84,12 @@ if(place_meeting(x,y,Obj_enemy) && !invincible){
 	global.avatar_hp -=1;
 	invincible = true;
 	audio_play_sound(Low_Health,10,false)
-
-	
+}
+//collison with bee
+if(place_meeting(x,y,obj_bee) && !invincible){
+	global.avatar_hp -=1;
+	invincible = true;
+	audio_play_sound(Low_Health,10,false)
 }
 //invincible for a short time
 if(invincible){
@@ -101,7 +105,7 @@ if(invincible){
 if(global.avatar_hp == 0){
 	global.avatar_death = true;
 }
-//steps on enemies
+//Bird Step
 if(collision_rectangle(x-16, y+16, x+16, y+18, Obj_enemy, false, true) && global.avatar_vsp >0){
 	show_debug_message("Enemy Hit");
 	audio_play_sound(Hurt,10,false);
@@ -109,6 +113,20 @@ if(collision_rectangle(x-16, y+16, x+16, y+18, Obj_enemy, false, true) && global
 	var temp = instance_nearest(x, y, Obj_enemy);
 	temp.sprite_index = spr_eneime_hit;
 	temp.vspeed = 10;
+	//with(instance_nearest(x,y,Obj_enemy))
+	//{
+	//	self.sprite_index = spr_eneime_hit;
+	//	self.vspeed = 10;//fall down
+	//}
+}
+//Bee hop
+if(collision_rectangle(x-16, y+16, x+16, y+20, obj_bee, false, true) && global.avatar_vsp >0){
+	show_debug_message("Enemy Hit");
+	audio_play_sound(Hurt,10,false);
+	global.avatar_vsp = -8;//boost player up
+	//var temp = instance_nearest(x, y, obj_bee);
+	//temp.sprite_index = spr_eneime_hit;
+	//temp.vspeed = 10;
 	//with(instance_nearest(x,y,Obj_enemy))
 	//{
 	//	self.sprite_index = spr_eneime_hit;
