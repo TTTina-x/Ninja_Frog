@@ -10,5 +10,5 @@ if(room = level4||room = level_3)
 }
 if(room = level5)
 {
-	x+= spd
+	x-= spd
 }

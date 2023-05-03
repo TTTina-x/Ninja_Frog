@@ -109,6 +109,26 @@ if(collision_rectangle(x-16, y+16, x+16, y+20, Obj_avatar, false, true) && globa
 	
 }
 
+//collison with bee
+if(place_meeting(x,y,obj_bee) && !invincible){
+	global.avatar2_hp -=1;
+	invincible = true;
+	audio_play_sound(Low_Health,10,false)
+}
 
+//Bee hop
+if(collision_rectangle(x-16, y+16, x+16, y+20, obj_bee, false, true) && global.avatar2_vsp >0){
+	show_debug_message("Enemy Hit");
+	audio_play_sound(Hurt,10,false);
+	global.avatar2_vsp = -8;//boost player up
+	//var temp = instance_nearest(x, y, obj_bee);
+	//temp.sprite_index = spr_eneime_hit;
+	//temp.vspeed = 10;
+	//with(instance_nearest(x,y,Obj_enemy))
+	//{
+	//	self.sprite_index = spr_eneime_hit;
+	//	self.vspeed = 10;//fall down
+	//}
+}
 
 

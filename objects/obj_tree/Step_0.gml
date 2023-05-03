@@ -1,6 +1,6 @@
 var val = int64(image_index)
 //shooting bullets
-if(val == 8 && shot == false)
+if(val == 8 && shot == false && bullType = 0)
 {
 	instance_create_layer(x,y,"Bullet",Obj_bullet);
 	audio_play_sound(Gun,10,false);//sound effect when shoots bullets
@@ -10,7 +10,17 @@ if(val == 8 && shot == false)
 else if(val = 7){
 	shot = false;
 }
-show_debug_message(image_index)
+if(val == 8 && shot == false && bullType = 1)
+{
+	instance_create_layer(x,y,"Bullet",Obj_bullet2);
+	audio_play_sound(Gun,10,false);//sound effect when shoots bullets
+	show_debug_message("shoot")
+	shot = true
+}
+else if(val = 7){
+	shot = false;
+}
+//show_debug_message(image_index)
 
 
 //if(timer != 60){
