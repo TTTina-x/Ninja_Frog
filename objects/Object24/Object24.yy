@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite_sheet_for_Basic_Pack4142",
-    "path": "sprites/Sprite_sheet_for_Basic_Pack4142/Sprite_sheet_for_Basic_Pack4142.yy",
+    "name": "spr_pink",
+    "path": "sprites/spr_pink/spr_pink.yy",
   },
   "spriteMaskId": null,
   "visible": true,

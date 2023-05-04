@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite_sheet_for_Basic_Pack41",
-    "path": "sprites/Sprite_sheet_for_Basic_Pack41/Sprite_sheet_for_Basic_Pack41.yy",
+    "name": "spr_green",
+    "path": "sprites/spr_green/spr_green.yy",
   },
   "spriteMaskId": null,
   "visible": true,
