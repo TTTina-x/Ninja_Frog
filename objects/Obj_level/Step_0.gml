@@ -73,6 +73,41 @@ if (room = level4 && global.avatar2_death = true)
 	global.avatar2_hp = 3;
 	audio_play_sound(Again,10,false);
 }
+//Level 5
+if (room = level5 && global.avatar_death = true)
+{
+	Obj_avatar.x = 64;
+	Obj_avatar.y = 558;
+	global.avatar_death = false;
+	global.avatar_hp = 3;
+	audio_play_sound(Again,10,false);
+}
+
+if (room = level5 && global.avatar2_death = true)
+{
+	Obj_avatar2.x = 736;
+	Obj_avatar2.y = 558;
+	global.avatar2_death = false;
+	global.avatar2_hp = 3;
+	audio_play_sound(Again,10,false);
+}
+if (room = level6 && global.avatar_death = true)
+{
+	Obj_avatar.x = 32;
+	Obj_avatar.y = 32;
+	global.avatar_death = false;
+	global.avatar_hp = 3;
+	audio_play_sound(Again,10,false);
+}
+
+if (room = level6 && global.avatar2_death = true)
+{
+	Obj_avatar2.x = 736;
+	Obj_avatar2.y = 32;
+	global.avatar2_death = false;
+	global.avatar2_hp = 3;
+	audio_play_sound(Again,10,false);
+}
 
 	
 if(Obj_avatar.y > room_height && room = Level_1)
@@ -197,6 +232,70 @@ if(Obj_avatar2.y > room_height && room = level4)
 		
 		Obj_avatar2.x = 755;
 		Obj_avatar2.y = 455
+		audio_play_sound(Next_level,10,false)
+		Obj_avatar2.player_respawn_timer = 0;
+	//	Obj_avatar.respawn = false;
+	}
+}
+
+if(Obj_avatar.y > room_height && room = level5)
+{
+	Obj_avatar.vspeed = 0;
+	Obj_avatar.player_respawn_timer++;
+	show_debug_message("timer on")
+	if(Obj_avatar.player_respawn_timer > Obj_avatar.player_respawn_interval)
+	{
+		
+		Obj_avatar.x = 64;
+		Obj_avatar.y = 558;
+		audio_play_sound(Next_level,10,false)
+		Obj_avatar.player_respawn_timer = 0;
+	//	Obj_avatar.respawn = false;
+	}
+}
+
+if(Obj_avatar2.y > room_height && room = level5)
+{
+	Obj_avatar2.vspeed = 0;
+	Obj_avatar2.player_respawn_timer++;
+	show_debug_message("timer on")
+	if(Obj_avatar2.player_respawn_timer > Obj_avatar2.player_respawn_interval)
+	{
+		
+		Obj_avatar2.x = 736;
+		Obj_avatar2.y = 558;
+		audio_play_sound(Next_level,10,false)
+		Obj_avatar2.player_respawn_timer = 0;
+	//	Obj_avatar.respawn = false;
+	}
+}
+
+if(Obj_avatar.y > room_height && room = level6)
+{
+	Obj_avatar.vspeed = 0;
+	Obj_avatar.player_respawn_timer++;
+	show_debug_message("timer on")
+	if(Obj_avatar.player_respawn_timer > Obj_avatar.player_respawn_interval)
+	{
+		
+		Obj_avatar.x = 32;
+		Obj_avatar.y = 32;
+		audio_play_sound(Next_level,10,false)
+		Obj_avatar.player_respawn_timer = 0;
+	//	Obj_avatar.respawn = false;
+	}
+}
+
+if(Obj_avatar2.y > room_height && room = level6)
+{
+	Obj_avatar2.vspeed = 0;
+	Obj_avatar2.player_respawn_timer++;
+	show_debug_message("timer on")
+	if(Obj_avatar2.player_respawn_timer > Obj_avatar2.player_respawn_interval)
+	{
+		
+		Obj_avatar2.x = 736;
+		Obj_avatar2.y = 32;
 		audio_play_sound(Next_level,10,false)
 		Obj_avatar2.player_respawn_timer = 0;
 	//	Obj_avatar.respawn = false;
