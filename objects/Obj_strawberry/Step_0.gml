@@ -8,6 +8,7 @@ if(sprite_index = Collected && image_index >= 6)
 {
 		image_index = 6;
 		image_speed = 0;
+		
 }
 //show_debug_message(score);
 

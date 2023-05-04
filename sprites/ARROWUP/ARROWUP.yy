@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "Sprite_sheet_for_Basic_Pack41",
-  "bbox_bottom": 11,
-  "bbox_left": 1,
-  "bbox_right": 11,
-  "bbox_top": 1,
+  "name": "ARROWUP",
+  "bbox_bottom": 15,
+  "bbox_left": 0,
+  "bbox_right": 16,
+  "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2ed28ec9-51cf-43f3-bf01-fa1af5f1f501",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c9f7baf2-c2c1-4163-b3cc-58e1fb380c10",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 13,
+  "height": 16,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7ae70462-dac8-486b-b1b9-17bd6c2bed72","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2872aef8-c09d-44df-bbc8-1cb3927fc911","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "Sprite_sheet_for_Basic_Pack",
+    "name": "ARROWUP",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2ed28ec9-51cf-43f3-bf01-fa1af5f1f501","path":"sprites/Sprite_sheet_for_Basic_Pack41/Sprite_sheet_for_Basic_Pack41.yy",},},},"Disabled":false,"id":"05909667-3bfc-4620-b07f-67d4effff69f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c9f7baf2-c2c1-4163-b3cc-58e1fb380c10","path":"sprites/ARROWUP/ARROWUP.yy",},},},"Disabled":false,"id":"2fb09b57-5859-4597-bb44-08b97bff572f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 13,
+  "width": 17,
 }
