@@ -93,7 +93,7 @@ if(place_meeting(x,y,obj_bee) && !invincible){
 }
 //invincible for a short time
 if(invincible){
-	timer ++;
+	timer++;
 	if(timer > duration){
 		timer = 0;
 		invincible = false;
