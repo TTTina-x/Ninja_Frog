@@ -4,7 +4,11 @@ if(all_furit = 0)
 	
 	sprite_index = Spr_cp_flag;
 	next_level = true;
+
+	
 }
+
+//audio_play_sound(flag_out,10,false)
 
 
 

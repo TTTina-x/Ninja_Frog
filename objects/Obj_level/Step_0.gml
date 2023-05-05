@@ -114,6 +114,7 @@ if (room = level6 && global.avatar2_death = true)
 	
 if(Obj_avatar.y > room_height && room = Level_1)
 {
+	
 	Obj_avatar.vspeed = 0;
 	Obj_avatar.player_respawn_timer++;
 	show_debug_message("timer on")
@@ -130,6 +131,7 @@ if(Obj_avatar.y > room_height && room = Level_1)
 
 if(Obj_avatar2.y > room_height && room = Level_1)
 {
+	instance_create_layer(30,160,"Bullet",Obj_countdown)
 	Obj_avatar2.vspeed = 0;
 	Obj_avatar2.player_respawn_timer++;
 	show_debug_message("timer on")
