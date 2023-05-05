@@ -1,4 +1,3 @@
-
 //check player's current level and when they died and sent back to the current level if they died
 //level 1
 if (room = Level_1 && global.avatar_death = true && Obj_avatar.player_respawn_timer <179)
@@ -56,7 +55,7 @@ if (room = level_3 && global.avatar2_death = true && Obj_avatar2.player_respawn_
 //level 4
 if (room = level4 && global.avatar_death = true && Obj_avatar.player_respawn_timer <179)
 {
-	Obj_avatar.x = 9;
+	Obj_avatar.x = 999;
 	Obj_avatar.y = 455;
 	global.avatar_vsp = 0;
 	//global.avatar_death = false;
@@ -65,7 +64,7 @@ if (room = level4 && global.avatar_death = true && Obj_avatar.player_respawn_tim
 
 if (room = level4 && global.avatar2_death = true && Obj_avatar2.player_respawn_timer <179)
 {
-	Obj_avatar2.x = 9;
+	Obj_avatar2.x = 999;
 	Obj_avatar2.y = 455;
 	global.avatar2_vsp = 0;
 	//global.avatar2_death = false;

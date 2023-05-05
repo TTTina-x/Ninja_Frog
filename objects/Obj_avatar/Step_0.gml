@@ -141,7 +141,7 @@ if(collision_rectangle(x-16, y+16, x+16, y+20, Obj_avatar2, false, true) && glob
     var temp = instance_nearest(x, y, Obj_avatar2);
     temp.sprite_index = spr_avatar2_hit;
     temp.vspeed = 10;
-	
+	global.avatar2_death = true;
 	
 }
 
