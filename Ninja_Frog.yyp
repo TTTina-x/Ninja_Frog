@@ -141,6 +141,7 @@
     {"id":{"name":"Low_Health","path":"sounds/Low_Health/Low_Health.yy",},},
     {"id":{"name":"spr_avatar2_jump","path":"sprites/spr_avatar2_jump/spr_avatar2_jump.yy",},},
     {"id":{"name":"Obj_saw","path":"objects/Obj_saw/Obj_saw.yy",},},
+    {"id":{"name":"Sprite56","path":"sprites/Sprite56/Sprite56.yy",},},
     {"id":{"name":"Obj_block","path":"objects/Obj_block/Obj_block.yy",},},
     {"id":{"name":"spr_tile","path":"sprites/spr_tile/spr_tile.yy",},},
     {"id":{"name":"spr_font","path":"sprites/spr_font/spr_font.yy",},},
@@ -156,8 +157,8 @@
     {"id":{"name":"start_menu","path":"rooms/start_menu/start_menu.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"level5","path":"rooms/level5/level5.yy",},},
     {"roomId":{"name":"start_menu","path":"rooms/start_menu/start_menu.yy",},},
+    {"roomId":{"name":"level5","path":"rooms/level5/level5.yy",},},
     {"roomId":{"name":"Level_1","path":"rooms/Level_1/Level_1.yy",},},
     {"roomId":{"name":"level_2","path":"rooms/level_2/level_2.yy",},},
     {"roomId":{"name":"level6","path":"rooms/level6/level6.yy",},},

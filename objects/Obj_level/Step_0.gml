@@ -202,8 +202,8 @@ if(Obj_avatar2.y > room_height && room = level_3)
 	if(Obj_avatar2.player_respawn_timer > Obj_avatar2.player_respawn_interval)
 	{
 		
-		Obj_avatar2.x = 755;
-		Obj_avatar2.y = 240
+		Obj_avatar2.x = 105;
+		Obj_avatar2.y = 375;
 		audio_play_sound(Next_level,10,false)
 		Obj_avatar2.player_respawn_timer = 0;
 	//	Obj_avatar.respawn = false;

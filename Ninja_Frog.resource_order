@@ -103,6 +103,7 @@
     {"name":"Low_Health","order":9,"path":"sounds/Low_Health/Low_Health.yy",},
     {"name":"spr_avatar2_jump","order":23,"path":"sprites/spr_avatar2_jump/spr_avatar2_jump.yy",},
     {"name":"Obj_saw","order":1,"path":"objects/Obj_saw/Obj_saw.yy",},
+    {"name":"Sprite56","order":51,"path":"sprites/Sprite56/Sprite56.yy",},
     {"name":"Obj_block","order":35,"path":"objects/Obj_block/Obj_block.yy",},
     {"name":"spr_font","order":8,"path":"sprites/spr_font/spr_font.yy",},
     {"name":"spr_eneime","order":9,"path":"sprites/spr_eneime/spr_eneime.yy",},
