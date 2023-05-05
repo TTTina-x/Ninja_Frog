@@ -1,2 +1,2 @@
 sprite_index = spr_hit;
-global.avatar_death = true;
+global.avatar2_death = true;
